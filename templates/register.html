@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <title >Apna Ghar</title>  
+    <link href="{{url_for('static',filename='register.css')}}" rel="stylesheet" >
+   
+</head> 
+
+<body>
+    <h1 style="font-size: 60px; text-align: center; margin-top: 30px; left: 40%; text-decoration: underline;" >Apna Ghar</h1>
+    <div class="container">
+        <h2 style="font-size: 30px; text-align: center;">Register Page</h2> 
+        <div class="box">
+            <i class="fa fa-user"></i>
+            <input type="name" name="Username" id="Username" placeholder="Your Username" >
+        </div> 
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="Email" id="email" placeholder="Your Email-Id">
+        </div> 
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="Password" id="password_1" placeholder="Enter Password">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="Confirm Password" id="password_2" placeholder="Confirm Password" > 
+        </div>
+        <div>
+            <label for="Cust" style="color: rgb(238, 236, 236); font-weight: bolder; font-size: 25px;">Register as :</label>
+            <select id="Cust">
+            <option value="HO">Home-Owner</option>
+            <option value="cust">Customer</option>
+            </select>
+        </div>
+        <a href="/"><button class="btn">Sign Up</button></a>
+    </div>  
+</body>
+</html>

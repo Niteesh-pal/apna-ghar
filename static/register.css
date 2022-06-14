@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background: url(rooms.jpg) no-repeat center fixed;
+    background-size: cover; 
+    font-size: 120%;
+}
+
+.container{ 
+    color: #ff7b53;
+    position: absolute;
+    top: 25%;
+    left: 38.4%; 
+    border: 30px solid rgb(50, 219, 231); 
+    border-width: 30px 3px 3px 3px;
+    border-radius: 10px 10px 0px 0px; 
+    padding: 8px; 
+    text-align: center;
+}
+.container h3{
+    font-family: 'Heebo', sans-serif;
+    width: 30%;
+    display: inline-block;
+    font-size: 40px; 
+    text-decoration: 2px solid underline rgb(121, 11, 56);
+    margin-bottom: 10px;
+    padding: 10px 0;   
+}        
+.box{
+    width: 100%;
+    margin: 22px 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+} 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffca9b;
+    opacity: 1; /* Firefox */
+  }
+.box input{  
+    background: none;
+    width: 75%;
+    padding: 6px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: rgb(255, 86, 123);
+} 
+.btn{
+    color: white;
+    cursor: pointer;
+    outline: none; 
+    margin: 12px 0;
+    padding: 10px 21px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;  
+} 
+.box i{ 
+    width: 25px; 
+    text-align: center;
+}
+.btn:hover{
+    opacity: 0.3;
+    color: purple; 
+    background: rgb(255, 78, 78);   
+} 

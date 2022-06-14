@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{%  block title %} HOME {% endblock %}
+
+{% block content %}
+<p><span style="color: aqua; font-size :30px; background-color: rgba(0,0,0,0.9); border-radius: 2px; padding: 10px;">Hello,</span><span style="color: yellow; font-size: 20px;  background-color: rgba(0,0,0,0.9);padding: 13px;">  here is  some option for you....</span></p>
+
+<div class="deko">
+  <div class="space">
+    <p class="fac" >There is something for you</p>
+            <div style=" width:min-content; text-decoration:aliceblue;">
+              <a href="#" style="text-decoration:none; "><p style="color: aliceblue;">more</p></a>
+            </div>
+  </div>  
+<div class="row row-cols-4 row-cols-md-5 g-lg-4">
+ 
+  {% for (i, j, k) in names_area_desc %}
+   
+    <div class="col">
+      <div class="card">
+        <a class=cardstyle href="/{{j}}">
+        <img class="imgctrl" src="{{url_for('static',filename=i)}}" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body">
+          <h5 class="card-title">{{j }}</h5>
+          <p class="card-text">{{k }}</p>
+       
+        </div>
+      </div>
+    
+    </div>
+    
+    {%endfor%}
+    
+  </div>
+</div>
+
+
+<div class="facilities">
+  
+    <p class="fac">Facilities we provide</p>
+  <div class="container">
+    <div class="row row-cols-4 row-cols-md-5 g-4">
+     
+      {% for (i, j, k) in sndloop %}
+          <div class="col">
+            <div class="card">
+              <a class=cardstyle href="/fac/{{j}}">
+              <img src="{{url_for('static',filename=i)}}" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">{{j}}</h5>
+                <p class="card-text">{{k }}</p>
+              </div>
+            </div>
+          </div>
+      
+  
+      {%endfor%}
+  
+   </div>
+</div>
+
+{% endblock %}
